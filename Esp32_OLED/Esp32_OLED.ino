@@ -23,8 +23,10 @@ void setup() {
   display.clearDisplay();
   display.setTextColor(WHITE);
   display.setTextSize(2);
-  display.setCursor(0, 20);
-  display.print("RTC CLOCK");
+  display.setCursor(0, 5);
+  display.print("NONAMED");
+  display.setCursor(0, 30);
+  display.print("1414 ljy");
   display.display();
   delay(5000);
 }
