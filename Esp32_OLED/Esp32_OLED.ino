@@ -35,36 +35,38 @@ void setup() {
 void loop() {
   DateTime now = rtc.now();
   display.clearDisplay();
-  display.setTextSize(3); //글씨 크기 정하기
-  display.setCursor(90, 25); //글씨 위치 정하기
-  display.println(now.second(), DEC); //글씨 출력
-  display.setTextSize(3);
-  display.setCursor(75, 25);
-  display.println(":");
-  display.setTextSize(3);
-  display.setCursor(30, 25);
-  display.println(":");
-  display.setTextSize(3);
-  display.setCursor(45, 25);
-  display.println(now.minute(), DEC);
-  display.setTextSize(3);
-  display.setCursor(0, 25);
-  display.println(now.hour(), DEC);
-  //display.setTextSize(2);
+  //display.setTextSize(3); //글씨 크기 정하기
+  //display.setCursor(90, 25); //글씨 위치 정하기
+  //display.println(now.second(), DEC); //글씨 출력
+  //display.setTextSize(3);
+  //display.setCursor(75, 25);
+  //display.println(":");
+  //display.setTextSize(3);
+  //display.setCursor(30, 25);
+  //display.println(":");
+  //display.setTextSize(3);
+  //display.setCursor(45, 25);
+  //display.println(now.minute(), DEC);
+  //display.setTextSize(3);
   //display.setCursor(0, 25);
-  //display.println(now.year(), DEC);
-  //display.print(days[now.dayOfTheWeek()]);
-  //display.setTextSize(2);
-  //display.setCursor(50, 25);
-  //display.println("-");
-  //display.setTextSize(2);
-  //display.setCursor(65, 25);
-  //display.println(now.month(), DEC);
-  //display.setTextSize(2);
-  //display.setCursor(80, 25);
-  //display.println("-");
-  //display.setTextSize(2);
-  //display.setCursor(95, 25);
-  //display.println(now.day(), DEC);
+  //display.println(now.hour(), DEC);
+  display.setTextSize(1);
+  display.setCursor(0, 0);
+  display.println(now.year(), DEC);
+  display.setTextSize(1);
+  display.setCursor(67, 53);
+  display.print(days[now.dayOfTheWeek()]);
+  display.setTextSize(1);
+  display.setCursor(26, 0);
+  display.println("-");
+  display.setTextSize(1);
+  display.setCursor(34, 0);
+  display.println(now.month(), DEC);
+  display.setTextSize(1);
+  display.setCursor(48, 0);
+  display.println("-");
+  display.setTextSize(1); 
+  display.setCursor(56, 0);
+  display.println(now.day(), DEC);
   display.display();
 }
